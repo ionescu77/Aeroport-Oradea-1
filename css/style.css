@@ -1,0 +1,40 @@
+#plecari {
+    height: 15%;
+    background-color: blue;
+    text-transform: uppercase;
+    padding: 40px;
+}
+section {
+    background-color: blue;
+}
+
+#tabela table {
+    color: white;
+    width: 100%;
+    border: 2px solid white;
+}
+
+#tabela thead {
+    background-color: rgb(36, 93, 250); 
+}
+
+#tabela table, th, td {
+    border: 2px solid white;
+    border-collapse: collapse;
+}
+
+#tabela tr:nth-child(even) {
+    background-color: #5176FD;
+}
+
+#intarziere {
+    background-color: #EDED19;
+}
+
+#anulat {
+    background-color: red;
+}
+
+#aterizat {
+    background-color: #29DA27;
+}
