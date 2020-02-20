@@ -13,28 +13,44 @@
 
 <body onload="startTime()">
 
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+    <div class="container">
+     <button class="navbar-toggler" data-toggle="collapse" data-target="#menu"><span class="navbar-toggler-icon"></span></button>
+       <div class="navbar-collapse collapse" id="menu">
+         <ul class="navbar-nav">
+           <li class="nav-item px-2"><a href="plecari.html" class="nav-link">Plecari</a></li>
+           <li class="nav-item px-2"><a href="sosiri.html" class="nav-link">Sosiri</a></li>
+           <li class="nav-item px-2"><a href="check-in.html" class="nav-link">Check-in</a></li>
+           <li class="nav-item px-2"><a href="bagaje.html" class="nav-link">Bagaje</a></li>
+           <li class="nav-item active"><a href="poarta.html" class="nav-link">Poarta</a></li>
+         </ul>
+       </div>
+     </div>
+</nav>
+
 <!--HEADER SIGLA COMPANIE-->
 
-<div id="header" class="text-center text-white py-3">
-    <div id="header">
+<div id="header-checkin" class="text-center text-white parent">
+  <div class="child-checkin">
         <img src="/img/sigla_tarom.png" alt="tarom" class="img-fluid">
-        <div style="font-size: 65px; position: absolute; right: 5%; top: 5%;"  id="txt"></div>
+        <div style="font-size: 65px; position: absolute; right: -15%; top: 0;" id="txt"></div>
+        <img src="img/Sigla-Aeroport-Oradea-2020-500.png" alt="Aeroport Oradea" style="position: absolute; left: -15%; top: 0; height: 100%;" class="img-fluid">
     </div>
 </div>
 
 <!--DESTINATIE-->
-<div class="mb-0 py-5 text-white">
-    <div class="absolute" id="check-in">
-        <h1>OTOPENI</h1>
+<div id="check-in" class="text-white parent">
+    <div class="child-checkin">
+        <h1>RO621 OTOPENI</h1>
     </div>
 </div>
 
-<!--FOOTER CU NR ZBOR SI ORA DECOLARE-->
-<div class="py-2" id="footer">
-        <div class="clearfix d-flex text-white" id="ooter">
-            <h1>RO622</h1>
-            <h1 class="ml-auto">DECOLARE: 09:20</h1>
-        </div>
+<!--FOOTER CU ZBORUL SI ORA DECOLARII-->
+<div id="footer-checkin" class="text-white parent">
+  <div class="child-checkin d-flex justify-content-around" style="top: 40%;left: 0;right:0;">
+    <h1 style="font-size: 3.5rem;">RO622</h1>
+    <h1 style="font-size: 3.5rem;">DECOLARE: 09:20</h1>
+  </div>
 </div> 
 
 

@@ -14,9 +14,25 @@
 <body>
 <!--ZIUA SAPTAMANII SOSIRI-->
 
-<div id="header" class="text-center text-white py-3">
-    <div id="header">
-        <h1>Bagaje</h1>
+<nav class="navbar navbar-expand-md navbar-dark bg-primary">
+    <div class="container">
+     <button class="navbar-toggler" data-toggle="collapse" data-target="#menu"><span class="navbar-toggler-icon"></span></button>
+       <div class="navbar-collapse collapse" id="menu">
+         <ul class="navbar-nav">
+           <li class="nav-item px-2"><a href="plecari.html" class="nav-link">Plecari</a></li>
+           <li class="nav-item px-2"><a href="sosiri.html" class="nav-link">Sosiri</a></li>
+           <li class="nav-item px-2"><a href="check-in.html" class="nav-link">Check-in</a></li>
+           <li class="nav-item px-2 active"><a href="bagaje.html" class="nav-link">Bagaje</a></li>
+           <li class="nav-item"><a href="poarta.html" class="nav-link">Poarta</a></li>
+         </ul>
+       </div>
+     </div>
+</nav>
+
+<div id="header" class="text-center text-white parent">
+    <div class="child">
+        <h1 style="font-size: 6vh;">Bagaje</h1>
+        <img src="img/Sigla-Aeroport-Oradea-2020-500.png" alt="Aeroport Oradea" style="position: absolute; left: -15%; top: 0; height: 145%;" class="img-fluid">
     </div>
 </div>
 
@@ -24,88 +40,45 @@
 <div id="tabela">
     <table class="text-center">
         <thead>
-            <th>Data<br>
-            Date</th>
+            <th>Sosire din<br>
+            Arrival From</th>
             <th>Operator<br>
                 Flight Operator</th>
             <th>Nr. zbor<br>
                 Flight No.</th>
-            <th>Plecare<br>
-                Departure</th>
-            <th>Destinatie<br>
-                Destination</th>
-            <th>Ora Decolare<br>
-                Departure Time</th>
-            <th>Ora Sosire<br>
-                Arrival Time</th>
             <th>Status</th>
-            <th>Intarziere</th>
+            <th>Banda<br>
+                Carousel</th>
         </thead>
         <tbody>
             <tr>
-                <td>18 Februarie</td>
-                <td><img src="" alt=""> Tarom</td>
-                <td>RO622</td>
-                <td>Oradea</td>
                 <td>Otopeni</td>
-                <td>09:20</td>
-                <td>10:40</td>
-                <td id="intarziere"></td>
-                <td>15 min</td>
+                <td><img src="/img/sigla_tarom.png" alt="Tarom"></td> 
+                <td>RO621</td>
+                <td id="intarziere">Intarziere</td>
+                <td>2</td>
             </tr>
             <tr>
-                <td>18 Februarie</td>
-                <td><img src="" alt=""> Tarom</td>
+                <td>Otopeni</td>
+                <td><img src="/img/sigla_tarom.png" alt="Tarom"></td>
                 <td>RO628</td>
-                <td>Oradea</td>
-                <td>Otopeni</td>
-                <td>19:45</td>
-                <td>21:05</td>
-                <td id="aterizat"></td>
+                <td id="anulat">Anulat</td>
                 <td></td>
             </tr>
             <tr>
-                <td>19 Februarie</td>
-                <td><img src="" alt=""> Tarom</td>
-                <td>RO622</td>
-                <td>Oradea</td>
                 <td>Otopeni</td>
-                <td>09:20</td>
-                <td>10:40</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>19 Februarie</td>
-                <td><img src="" alt=""> Tarom</td>
-                <td>RO628</td>
-                <td>Oradea</td>
-                <td>Otopeni</td>
-                <td>19:45</td>
-                <td>21:05</td>
-                <td id="intarziere"></td>
-                <td>15 min</td>
-            </tr>
-            <tr>
-                <td>20 Februarie</td>
-                <td><img src="" alt=""> Tarom</td>
-                <td>RO622</td>
-                <td>Oradea</td>
-                <td>Otopeni</td>
-                <td>09:20</td>
-                <td>10:40</td>
-                <td id="anulat"></td>
-                <td></td>
+                <td><img src="img/sigla_tarom.png" alt="Tarom"></td>
+                <td>RO621</td>
+                <td>On Time</td>
+                <td>1</td>
             </tr>
         </tbody>
     </table>
 </div>
 
 <!--FOOTER CU TELEFON URGENTA-->
-<div class="py-2" id="footer">
-        <div class="text-center text-white">
-            <h4>Pentru urgente apelati <strong>112</strong> gratuit in orice retea de telefonie mobila</h4>
-        </div>
+<div id="footer" class="text-center text-white parent">
+    <h4 class="child">Pentru urgente apelati <strong>112</strong> gratuit in orice retea de telefonie mobila</h4>
 </div>
 
 
