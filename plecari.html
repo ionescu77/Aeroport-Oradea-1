@@ -21,21 +21,23 @@
            <li class="nav-item px-2 active"><a href="plecari.html" class="nav-link">Plecari</a></li>
            <li class="nav-item px-2"><a href="sosiri.html" class="nav-link">Sosiri</a></li>
            <li class="nav-item px-2"><a href="check-in.html" class="nav-link">Check-in</a></li>
-           <li class="nav-item px-2"><a href="bagaje.html" class="nav-link">Bagaje</a></li>
-           <li class="nav-item"><a href="poarta.html" class="nav-link">Poarta</a></li>
+           <li class="nav-item px-2"><a href="bagaje_interne.html" class="nav-link">Bagaje sosiri interne</a></li>
+           <li class="nav-item px-2"><a href="bagaje_externe.html" class="nav-link">Bagaje sosiri externe</a></li>
+           <li class="nav-item px-2"><a href="poarta.html" class="nav-link">Poarta</a></li>
          </ul>
        </div>
      </div>
 </nav>
 
 <div id="header" class="text-center text-white parent">
-    <div class="child">
-        <h1>Luni - Monday</h1>
-        <h1>Plecari - Departures</h1>
-        <div style="font-size: 65px; position: absolute; right: -15%; top: 0;" id="txt"></div>
-        <img src="img/Sigla-Aeroport-Oradea-2020-500.png" alt="Aeroport Oradea" style="position: absolute; left: -15%; top: 0; height: 100%;" class="img-fluid">
-    </div>
+  <div class="child">
+    <img src="img/Sigla-Aeroport-Oradea-2020-500.png" alt="Aeroport Oradea" style="position: absolute; left: -15%; top: -100%;" class="img-fluid fit-image">
+    <h1 style="font-size: 5vh;">Plecari -Departures</h1>
+    <div style="font-size: 5vh;position: absolute; right: -13%; top: -75%;" id="txt"></div>
+    <div style="font-size: 5vh;position: absolute; right: -15%; top: 25%;" id="date"></div>
+  </div>
 </div>
+
 
 <!--TABELA SOSIRI-->
 <div id="tabela">
@@ -47,84 +49,100 @@
                 Flight Operator</th>
             <th>Nr. zbor<br>
                 Flight No.</th>
-            <th>Plecare<br>
-                Departure</th>
             <th>Destinatie<br>
                 Destination</th>
             <th>Ora Decolare<br>
                 Departure Time</th>
-            <th>Ora Sosire<br>
-                Arrival Time</th>
+            <th>Terminal<br>
+                Terminal</th>
             <th>Status</th>
-            <th>Intarziere</th>
+            <th>Intarziere<br>
+            Delay</th>
         </thead>
         <tbody>
             <tr>
                 <td>18 Februarie</td>
                 <td><img src="img/sigla_tarom.png" alt="Tarom"></td>
                 <td>RO622</td>
-                <td>Oradea</td>
                 <td>Otopeni</td>
                 <td>09:20</td>
-                <td>10:40</td>
-                <td id="intarziere">Intarziere</td>
+                <td>T 2</td>
+                <td id="intarziere">Intarziere<br>
+                Delay</td>
                 <td>15 min</td>
             </tr>
             <tr>
                 <td>18 Februarie</td>
                 <td><img src="img/sigla_tarom.png" alt="Tarom"></td>
                 <td>RO628</td>
-                <td>Oradea</td>
                 <td>Otopeni</td>
                 <td>19:45</td>
-                <td>21:05</td>
-                <td id="aterizat-decolat">Decolat</td>
+                <td>T 1</td>
+                <td id="aterizat-decolat">Decolat<br>
+                Departed</td>
                 <td></td>
             </tr>
             <tr>
                 <td>19 Februarie</td>
                 <td><img src="img/sigla_tarom.png" alt="Tarom"></td>
                 <td>RO622</td>
-                <td>Oradea</td>
                 <td>Otopeni</td>
                 <td>09:20</td>
-                <td>10:40</td>
-                <td>On Time</td>
+                <td>T 2</td>
+                <td>On Time<br>
+                In asteptare</td>
                 <td></td>
             </tr>
             <tr>
                 <td>19 Februarie</td>
                 <td><img src="img/sigla_tarom.png" alt="Tarom"></td>
                 <td>RO628</td>
-                <td>Oradea</td>
                 <td>Otopeni</td>
                 <td>19:45</td>
-                <td>21:05</td>
-                <td id="intarziere">Intarziere</td>
+                <td>T 1</td>
+                <td id="intarziere">Intarziere<br>
+                Delay</td>
                 <td>15 min</td>
             </tr>
             <tr>
                 <td>20 Februarie</td>
                 <td><img src="img/sigla_tarom.png" alt="Tarom"></td>
                 <td>RO622</td>
-                <td>Oradea</td>
                 <td>Otopeni</td>
                 <td>09:20</td>
-                <td>10:40</td>
-                <td id="anulat">Anulat</td>
+                <td>T 2</td>
+                <td id="anulat">Anulat<br>
+                Canceled</td>
                 <td></td>
             </tr>
+            <tr>
+              <td>19 Februarie</td>
+              <td><img src="img/sigla_tarom.png" alt="Tarom"></td>
+              <td>RO622</td>
+              <td>Otopeni</td>
+              <td>09:20</td>
+              <td>T 2</td>
+              <td>On Time<br>
+              In asteptare</td>
+              <td></td>
+          </tr>
         </tbody>
     </table>
 </div>
 
 <!--FOOTER CU TELEFON URGENTA-->
 <div id="footer" class="text-center text-white parent">
-    <h3 class="child">Pentru urgente apelati <strong>112</strong> gratuit in orice retea de telefonie mobila</h3>
+    <h3 class="child" style="font-size: 3vh;">Pentru urgente apelati <strong>112</strong> gratuit in orice retea de telefonie mobila</h3>
 </div>
 
 
-
+<script>
+  n =  new Date();
+y = n.getFullYear();
+m = n.getMonth() + 1;
+d = n.getDate();
+document.getElementById("date").innerHTML = d + "/" + m + "/" + y;
+</script>
 <script>
     function startTime() {
       var today = new Date();

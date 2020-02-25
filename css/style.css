@@ -16,10 +16,13 @@ body {
     height: 20%;
 }
 
+.fit-image{
+    height: 18vh;
+    object-fit: cover;
+}
 
 #tabela {
     color: white;
-    border: 2px solid white;
     width: 100%;
     height: 70%;
 }
@@ -36,27 +39,19 @@ table {
     box-sizing: border-box;
 }
 
-#tabela thead {
-    background-color: rgb(36, 93, 250); 
-}
 
 #tabela table, th, td {
-    border: 2px solid white;
+    border: 0.2vw solid white;
     border-collapse: collapse;
     font-size: 3vh;
 }
 
-#tabela tr:nth-child(even) {
-    background-color: #5176FD;
-}
-
-#tabela tr:nth-child(odd) {
+#tabela {
     background-color: blue;
 }
 
 #tabela img {
-    height: 50%;
-    width: 50%;
+    height: 7.5vh;
 }
 
 #intarziere {
@@ -72,6 +67,7 @@ table {
 }
 
 
+
 #header-checkin {
     background-color: blue;
     text-transform: uppercase;
@@ -80,19 +76,17 @@ table {
 }
 
 #check-in {
-    background-color: rgb(36, 93, 250); 
-    text-align: center;
-   height: 30%;
+   background-color: rgb(36, 93, 250); 
+   text-align: center;
+   height: 40%;
    width: 100%;
-   padding-top: 5%;
-   padding-bottom: 5%;
    box-sizing: border-box;
 }
 
 #footer-checkin {
     background-color: blue;
     text-transform: uppercase;
-    height: 35%;
+    height: 25%;
     width: 100%;
     box-sizing: border-box;
 }
@@ -106,7 +100,7 @@ table {
 }
 
 #check-in h1 {
-    font-size: 3.5rem;
+    font-size: 6vh;
 }
 
 #open {
@@ -123,14 +117,15 @@ table {
 
 .child {
     position: absolute;
-    top: 25%;
+    top: 35%;
+    bottom: 35%;
     left: 15%;
     right: 15%;
 }
 
 .child-checkin {
     position: absolute;
-    top: 30%;
+    top: 11%;
     left: 15%;
     right: 15%;
 }

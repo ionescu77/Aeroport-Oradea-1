@@ -21,21 +21,24 @@
            <li class="nav-item px-2"><a href="plecari.html" class="nav-link">Plecari</a></li>
            <li class="nav-item px-2 active"><a href="sosiri.html" class="nav-link">Sosiri</a></li>
            <li class="nav-item px-2"><a href="check-in.html" class="nav-link">Check-in</a></li>
-           <li class="nav-item px-2"><a href="bagaje.html" class="nav-link">Bagaje</a></li>
-           <li class="nav-item"><a href="poarta.html" class="nav-link">Poarta</a></li>
+           <li class="nav-item px-2"><a href="bagaje_interne.html" class="nav-link">Bagaje sosiri interne</a></li>
+           <li class="nav-item px-2"><a href="bagaje_externe.html" class="nav-link">Bagaje sosiri externe</a></li>
+           <li class="nav-item px-2"><a href="poarta.html" class="nav-link">Poarta</a></li>
          </ul>
        </div>
      </div>
 </nav>
 
-<div id="header" class="text-center text-white parent">
+
+  <div  id="header" class="text-white text-center parent">
     <div class="child">
-        <h1>Luni - Monday</h1>
-        <h1>Sosiri - Arrivals</h1>
-        <div style="font-size: 65px; position: absolute; right: -15%; top: 0;" id="txt"></div>
-        <img src="img/Sigla-Aeroport-Oradea-2020-500.png" alt="Aeroport Oradea" style="position: absolute; left: -15%; top: 0; height: 100%;" class="img-fluid">
+      <img src="img/Sigla-Aeroport-Oradea-2020-500.png" alt="Aeroport Oradea" style="position: absolute; left: -15%; top: -100%;" class="img-fluid fit-image">
+      <h1 style="font-size: 5vh;">Sosiri - Arrivals</h1>
+      <div style="font-size: 5vh;position: absolute; right: -13%; top: -75%;" id="txt"></div>
+      <div style="font-size: 5vh;position: absolute; right: -15%; top: 25%;" id="date"></div>
     </div>
-</div>
+  </div>
+
 
 <!--TABELA SOSIRI-->
 <div id="tabela">
@@ -47,16 +50,15 @@
                 Flight Operator</th>
             <th>Nr. zbor<br>
                 Flight No.</th>
-            <th>Plecare<br>
-                Departure</th>
-            <th>Destinatie<br>
-                Destination</th>
+            <th>Sosire De La<br>
+                Arrives From</th>
             <th>Ora Decolare<br>
                 Departure Time</th>
-            <th>Ora Sosire<br>
-                Arrival Time</th>
+            <th>Terminal<br>
+                Terminal</th>
             <th>Status</th>
-            <th>Intarziere</th>
+            <th>Intarziere<br>
+            Delay</th>
         </thead>
         <tbody>
             <tr>
@@ -64,10 +66,10 @@
                 <td><img src="img/sigla_tarom.png" alt="Tarom"></td>
                 <td>RO621</td>
                 <td>Otopeni</td>
-                <td>Oradea</td>
                 <td>07:30</td>
-                <td>08:55</td>
-                <td id="intarziere">Intarziere</td>
+                <td>T 1</td>
+                <td id="intarziere">Intarziere<br>
+                Delay</td>
                 <td>15 min</td>
             </tr>
             <tr>
@@ -75,10 +77,10 @@
                 <td><img src="img/sigla_tarom.png" alt="Tarom"></td>
                 <td>RO628</td>
                 <td>Otopeni</td>
-                <td>Oradea</td>
                 <td>17:55</td>
-                <td>19:20</td>
-                <td id="aterizat">Aterizat</td>
+                <td>T 2</td>
+                <td id="aterizat-decolat">Aterizat<br>
+                Landed</td>
                 <td></td>
             </tr>
             <tr>
@@ -86,10 +88,10 @@
                 <td><img src="img/sigla_tarom.png" alt="Tarom"></td>
                 <td>RO622</td>
                 <td>Otopeni</td>
-                <td>Oradea</td>
                 <td>07:30</td>
-                <td>08:55</td>
-                <td>On Time</td>
+                <td>T 1</td>
+                <td>On Time<br>
+                In asteptare</td>
                 <td></td>
             </tr>
             <tr>
@@ -97,10 +99,10 @@
                 <td><img src="img/sigla_tarom.png" alt="Tarom"></td>
                 <td>RO628</td>
                 <td>Otopeni</td>
-                <td>Oradea</td>
                 <td>17:55</td>
-                <td>19:20</td>
-                <td>On Time</td>
+                <td>T 2</td>
+                <td>On Time<br>
+                In asteptare</td>
                 <td></td>
             </tr>
             <tr>
@@ -108,18 +110,30 @@
                 <td><img src="img/sigla_tarom.png" alt="Tarom"></td>
                 <td>RO622</td>
                 <td>Otopeni</td>
-                <td>Oradea</td>
                 <td>07:30</td>
-                <td>08:55</td>
-                <td id="anulat">Anulat</td>
+                <td>T 1</td>
+                <td id="anulat">Anulat<br>
+                Canceled</td>
                 <td></td>
+              </tr>
+              <tr>
+                <td>20 Februarie</td>
+                <td><img src="img/sigla_tarom.png" alt="Tarom"></td>
+                <td>RO622</td>
+                <td>Otopeni</td>
+                <td>07:30</td>
+                <td>T 1</td>
+                <td id="anulat">Anulat<br>
+                Canceled</td>
+                <td></td>
+              </tr>
         </tbody>
     </table>
 </div>
 
 <!--FOOTER CU TELEFON URGENTA-->
 <div id="footer" class="text-center text-white parent">
-    <h4 class="child">Pentru urgente apelati <strong>112</strong> gratuit in orice retea de telefonie mobila</h4>
+    <h4 class="child" style="font-size: 3vh;">Pentru urgente apelati <strong>112</strong> gratuit in orice retea de telefonie mobila</h4>
 </div>
 
 
@@ -140,6 +154,14 @@
       return i;
     }
     </script>
+<script>
+  n =  new Date();
+y = n.getFullYear();
+m = n.getMonth() + 1;
+d = n.getDate();
+document.getElementById("date").innerHTML = d + "/" + m + "/" + y;
+</script>
+
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
