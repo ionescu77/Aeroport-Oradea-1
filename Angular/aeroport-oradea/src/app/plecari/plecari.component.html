@@ -1,0 +1,48 @@
+<app-header-tabele [name]="titlu"></app-header-tabele>
+  
+  <!--TABELA SOSIRI-->
+  <div id="tabela">
+      <table class="text-center">
+          <thead>
+              <th>Data<br>
+              Date</th>
+              <th>Operator<br>
+                  Flight Operator</th>
+              <th>Nr. zbor<br>
+                  Flight No.</th>
+              <th>Destinatie<br>
+                  Destination</th>
+              <th>Ora Decolare<br>
+                  Departure Time</th>
+              <th>Terminal<br>
+                  Terminal</th>
+              <th>Status</th>
+              <th>Intarziere<br>
+              Delay</th>
+          </thead>
+          <tbody>
+              <tr *ngFor="let item of lstPlecari">
+                  <td>{{ item.id}}</td>
+                  <td><img src="../../assets/img/sigla_tarom.png" alt="Tarom"></td>
+                  <td>RO622</td>
+                  <td>{{ item.task}}</td>
+                  <td>09:20</td>
+                  <td>T 2</td>
+                  <td [ngStyle]="{backgroundColor: item.done === true ? 'rgb(216, 216, 3)' : 'blue'}" *ngIf="item.done; else templateOnTime">Intarziere<br>
+                  Delay</td>
+                  <ng-template  #templateOnTime>
+                    <td>On Time</td>
+                  </ng-template>
+                  <td *ngIf="item.done; else templateTime">15 min</td>
+                  <ng-template #templateTime>
+                    <td></td>
+                  </ng-template>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+  
+  <!--FOOTER CU TELEFON URGENTA-->
+<app-footer></app-footer>
+  
+

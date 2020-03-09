@@ -1,0 +1,7 @@
+<app-navbar (onSelected)="pageSelected($event)"></app-navbar>
+<app-plecari *ngIf="selection==='plecari'"></app-plecari>
+<app-sosiri *ngIf="selection==='sosiri'"></app-sosiri>
+<app-check-in *ngIf="selection==='check-in'"></app-check-in>
+<app-bagaje-intern *ngIf="selection==='bagaje-intern'"></app-bagaje-intern>
+<app-bagaje-extern *ngIf="selection==='bagaje-extern'"></app-bagaje-extern>
+<app-gate *ngIf="selection==='gate'"></app-gate>
