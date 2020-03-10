@@ -1,6 +1,6 @@
-import { Component, OnInit, Input, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { PlecariClass } from '../Classes/plecari-class';
-import { PlecariService } from '../services/plecari.service';
+import { AeroportService } from '../services/aeroport.service';
 import { interval } from 'rxjs';
 import { startWith, switchMap } from 'rxjs/operators';
 
@@ -17,7 +17,7 @@ export class PlecariComponent implements OnInit, OnDestroy {
 
   lstPlecari:PlecariClass[];
 
-  constructor(private apiPlecari: PlecariService,) {
+  constructor(private apiPlecari: AeroportService,) {
     this.PollValues();
    }
 
@@ -33,7 +33,7 @@ export class PlecariComponent implements OnInit, OnDestroy {
     this.pollingData=interval(1000)
     .pipe(
       startWith(0),
-      switchMap(() => this.apiPlecari.getApi())
+      switchMap(() => this.apiPlecari.getApiPlecari())
     )
     .subscribe(
       res => {

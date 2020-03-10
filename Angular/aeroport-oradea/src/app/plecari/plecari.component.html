@@ -33,7 +33,7 @@
                   <ng-template  #templateOnTime>
                     <td>On Time</td>
                   </ng-template>
-                  <td *ngIf="item.done; else templateTime">15 min</td>
+                  <td *ngIf="item.done; else templateTime">{{ item.id }} min</td>
                   <ng-template #templateTime>
                     <td></td>
                   </ng-template>

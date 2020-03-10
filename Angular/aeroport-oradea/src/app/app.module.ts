@@ -12,7 +12,7 @@ import { GateComponent } from './gate/gate.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderTabeleComponent } from './header-tabele/header-tabele.component';
-import { PlecariService } from '../app/services/plecari.service';
+import { AeroportService } from '../app/services/aeroport.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +31,7 @@ import { PlecariService } from '../app/services/plecari.service';
     BrowserModule,
     HttpClientModule
   ],
-  providers: [PlecariService],
+  providers: [AeroportService],
   bootstrap: [AppComponent]
 })
 export class AppModule {  }
