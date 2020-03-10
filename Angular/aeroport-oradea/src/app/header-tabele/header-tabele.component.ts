@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Title } from '../title.model';
 
 @Component({
   selector: 'app-header-tabele',
