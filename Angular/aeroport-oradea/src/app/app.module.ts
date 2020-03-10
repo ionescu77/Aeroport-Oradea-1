@@ -13,6 +13,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderTabeleComponent } from './header-tabele/header-tabele.component';
 import { AeroportService } from '../app/services/aeroport.service';
+import { CheckIn2Component } from './check-in2/check-in2.component';
+import { CheckIn3Component } from './check-in3/check-in3.component';
+import { CheckIn4Component } from './check-in4/check-in4.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +29,9 @@ import { AeroportService } from '../app/services/aeroport.service';
     NavbarComponent,
     FooterComponent,
     HeaderTabeleComponent,
+    CheckIn2Component,
+    CheckIn3Component,
+    CheckIn4Component,
   ],
   imports: [
     BrowserModule,
