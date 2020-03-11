@@ -11,8 +11,7 @@ export class AeroportService {
     ){}
 
     getApiPlecari(): Observable<any> {
-        return this.http.get('http://192.168.0.120:3000/todos')
-        
+        return this.http.get('http://192.168.0.121:8000/flights')
       }
     
     getApiSosiri(): Observable<any> {

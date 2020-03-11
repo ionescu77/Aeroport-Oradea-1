@@ -2,8 +2,8 @@ export class PlecariClass {
     deserialize(res: any) {
         throw new Error("Method not implemented.");
     }
-    id: number; 
-    done: boolean;
-    task: string;
-    due: boolean;
+    destination: any;
+    flight_number: string;
+    date: string;
+    airline: string;
 }
