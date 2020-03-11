@@ -16,6 +16,9 @@ import { AeroportService } from '../app/services/aeroport.service';
 import { CheckIn2Component } from './check-in2/check-in2.component';
 import { CheckIn3Component } from './check-in3/check-in3.component';
 import { CheckIn4Component } from './check-in4/check-in4.component';
+import { Gate2Component } from './gate2/gate2.component';
+import { Gate3Component } from './gate3/gate3.component';
+
 
 @NgModule({
   declarations: [
@@ -32,6 +35,8 @@ import { CheckIn4Component } from './check-in4/check-in4.component';
     CheckIn2Component,
     CheckIn3Component,
     CheckIn4Component,
+    Gate2Component,
+    Gate3Component
   ],
   imports: [
     BrowserModule,

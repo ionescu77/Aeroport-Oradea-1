@@ -19,7 +19,17 @@
            </li>
            <li class="nav-item px-2"><a href="#" (click)="onSelect('bagaje-intern')" class="nav-link">Bagaje sosiri interne</a></li>
            <li class="nav-item px-2"><a href="#" (click)="onSelect('bagaje-extern')" class="nav-link">Bagaje sosiri externe</a></li>
-           <li class="nav-item px-2"><a href="#" (click)="onSelect('gate')" class="nav-link">Poarta</a></li>
+           <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+              Poarta
+            </a>
+             <div class="dropdown-menu">
+               <a href="#" (click)="onSelect('gate')" class="dropdown-item">Poarta 1</a>
+               <a href="#" (click)="onSelect('gate2')" class="dropdown-item">Poarta 2</a>
+               <a href="#" (click)="onSelect('gate3')" class="dropdown-item">Poarta 3</a>
+              </div>
+          </li>
+
          </ul>
        </div>
      </div>
